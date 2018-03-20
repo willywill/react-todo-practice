@@ -3,8 +3,10 @@ import TaskController from '../controllers/TaskController'
 
 const tasks = express.Router();
 
-tasks.post('/tasks', TaskController.getAllTasks);
-tasks.post('/task', TaskController.getTask);
-tasks.delete('/task', TaskController.removeTask);
+tasks.post('/task', TaskController.createTask);
+tasks.get('/tasks', TaskController.getAllTasks);
+tasks.get('/task:id', TaskController.getTask);
+tasks.put('/task:id', TaskController.updateTask);
+tasks.delete('/task:id', TaskController.removeTask);
 
 export default tasks;
