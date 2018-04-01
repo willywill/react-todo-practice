@@ -13,6 +13,6 @@ app.use(cors());
 app.use(morgan('dev'));
 app.use('/api', tasks);
 
-sequelize.sync().then(() => {
+sequelize.sync({force: false}).then(() => {
   app.listen(port, () => console.log(`Server started on port ${port}.`));
 });

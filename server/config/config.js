@@ -1,13 +1,13 @@
 export default {
-  port: process.env.PORT || 8081,
   db: {
-    database: process.env.DB_NAME || 'todoapp',
-    user: process.env.DB_USER || 'todoapp',
-    password: process.env.DB_PASS || 'todoapp',
+    database: process.env.DB_NAME || 'Todo_App',
+    user: process.env.DB_USER || 'sa',
+    password: process.env.DB_PASS || 'password',
     options: {
-      dialect: process.env.DIALECT || 'sqlite',
-      host: process.env.HOST || 'localhost',
-      storage: './todoDB.sqlite',
+      dialect: process.env.DIALECT || 'mssql',
+      dialectOptions: {
+        instanceName: `SQLEXPRESS`
+      },
       operatorsAliases: false,
       freezeTableName: true
     }
