@@ -1,3 +1,8 @@
 body {
-  background-image: linear-gradient(to right top, #adc5e0, #8bb3e4, #6aa1e8, #468eea, #127aeb);
+  background-color: #e0f2ff !important;
+}
+
+.card {
+  border: 0 !important;
+  box-shadow: 0px 4px 20px 0px rgba(96,103,138,0.125);
 }

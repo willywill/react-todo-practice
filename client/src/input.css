@@ -1,0 +1,14 @@
+.btn {
+    padding: 0.45rem 1.15rem 0.45rem 1.15rem !important;
+    border: 0 !important;
+    border-radius: 4px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    box-shadow: 0px 4px 20px 0px rgba(96,103,138,0.125) !important;
+}
+
+.btn-primary {
+    background-color: #1192fc !important;
+    box-shadow: 0px 4px 20px 0px rgba(17, 146, 252, 0.275) !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+}

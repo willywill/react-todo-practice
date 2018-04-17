@@ -6,7 +6,7 @@ export default {
     options: {
       dialect: process.env.DIALECT || 'mssql',
       dialectOptions: {
-        instanceName: `SQLEXPRESS`
+        instanceName: `PRACTICE`
       },
       operatorsAliases: false,
       freezeTableName: true

@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
+import '../header.css';
 
 class Header extends Component {
-  // constructor () {
-  //   super();
-  // }
 
   getCurrentDate = () => {
     const d = new Date();
@@ -12,10 +10,14 @@ class Header extends Component {
 
   render () {
     return (
-      <header>
-        <h1 className="display-4">To-Do App</h1>
-        {/* <div className="display-4">{this.getCurrentDate()}</div> */}
-      </header>
+      <div className="header-container">
+        <header className="header">
+          <h1 className="title">Todo App</h1>
+        </header>
+        <div className="subtitle-container">
+          <h4 className="subtitle">Tasks</h4>
+        </div>
+      </div>
     );
   }
 }
